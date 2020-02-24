@@ -1,0 +1,10 @@
+name: AugiesMarketplace
+main: com.gmail.augiesprojects.marketplace.Main
+version: 1.0-SNAPSHOT
+author: Augies
+api-version: 1.15
+commands:
+  amarket:
+    description: the base-command for AugiesMarketplace
+    usage: /<command>
+    aliases: [augiesmarket, augiesmarketplace, am]
