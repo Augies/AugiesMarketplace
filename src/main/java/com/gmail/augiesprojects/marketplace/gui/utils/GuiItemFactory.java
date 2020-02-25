@@ -28,6 +28,7 @@ public class GuiItemFactory{
         }
     }
 
+    @NotNull
     private static ItemStack getDefaultItem(){
         return new ItemStack(Material.AIR, 1);
     }
@@ -36,6 +37,7 @@ public class GuiItemFactory{
      * Create a banner with an arrow pointing right
      * @return a right arrow
      */
+    @NotNull
     private static ItemStack getNextPage(){
         return getRootPageBanner(PatternType.STRIPE_RIGHT);
     }
@@ -44,6 +46,7 @@ public class GuiItemFactory{
      * Create a banner with an arrow pointing left
      * @return a left arrow
      */
+    @NotNull
     private static ItemStack getPreviousPage(){
         return getRootPageBanner(PatternType.STRIPE_LEFT);
     }
@@ -64,6 +67,7 @@ public class GuiItemFactory{
         return previousPage;
     }
 
+    @NotNull
     private static ItemStack getErrorItem(){
         ItemStack error = new ItemStack(Material.BARRIER, 1);
         ItemMeta meta = error.getItemMeta();

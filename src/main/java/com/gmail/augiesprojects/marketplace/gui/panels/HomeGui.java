@@ -30,11 +30,7 @@ public class HomeGui extends MarketplaceGui {
 
     @Override
     public void initializeInv() {
-        ItemStack s = GuiItem.NEXT_PAGE.getItemStack();
-        ItemStack rs = GuiItem.PREVIOUS_PAGE.getItemStack();
-        for(int i = 0; i < inventory.getSize(); i++){
-            ItemStack addItem = i%2==0 ? s : rs;
-            inventory.setItem(i, addItem);
-        }
+        inventory.setItem(48, GuiItem.PREVIOUS_PAGE.getItemStack());
+        inventory.setItem(50, GuiItem.NEXT_PAGE.getItemStack());
     }
 }
